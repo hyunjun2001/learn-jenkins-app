@@ -45,6 +45,7 @@ pipeline {
               docker build -t $APP_NAME:$REACT_APP_VERSION .
           '''
       }
+    }
 
         stage('Deploy to AWS') {
             agent {
